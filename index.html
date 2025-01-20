@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandre Sibony - Solutions Architect</title>
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="https://unpkg.com/vue-feather@2"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact {
-            text-align: center;
-            margin: 10px 0;
-        }
-        .projects {
-            margin-top: 20px;
-        }
-        .project {
-            margin-bottom: 10px;
-        }
-        .icon {
-            vertical-align: middle;
-        }
-    </style>
+    <title>Alexandre Sibony - Solutions Architect & Consultant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  
-<h1>Hello there</h1>
-  <a href="/project_1.html">View project 1</a>
-  
     <div id="app">
-        <header>
-            <h1>Alexandre Sibony</h1>
-            <h2>Solutions Architect & Consultant</h2>
-        </header>
+        <section style="max-width:600px;margin:24px auto">
 
-        <div class="contact">
-            <p>Email: <a href="mailto:alexandre.sibony@example.com">alexandre.sibony@example.com</a></p>
-            <p>Phone: +33 6 12 34 56 78</p>
-            <p>
+            <header style="text-align: center;">
+                <h1>Alexandre Sibony</h1>
+                <h2>Solutions Architect & Consultant</h2>
+            </header>
+
+            <div class="contact" style="text-align: center;">
                 <a href="https://linkedin.com/in/alexandresibony" target="_blank">
-                    <vue-feather type="linkedin" class="icon" /> LinkedIn
+                    <i data-feather="linkedin" class="icon"></i> LinkedIn
                 </a>
-            </p>
-        </div>
+            </div>
 
-        <section class="projects">
-            <h3>Current Projects</h3>
-            <div class="project">
-                <strong>3D Corner:</strong> Connecting creators with premium 3D printing services.
-            </div>
-            <div class="project">
-                <strong>Botello:</strong> Sustainable products made from recycled materials.
-            </div>
-            <div class="project">
-                <strong>Workload Estimation:</strong> Tools for efficient workload planning.
-            </div>
-            <div class="project">
-                <strong>ERP Upgrade:</strong> Comprehensive version upgrade management.
-            </div>
+            <br />
+
+            <section class="projects">
+                <h3>Current Employer:
+                    <small>Capgemini Technology Services</small>
+                </h3>
+            </section>
+
+            <section class="projects">
+                <h3>Expertise</h3>
+                <ul class="project">
+                    <li>
+                        <strong>Supply Chain</strong>
+                        <!-- Procurement, production, inventory management, distribution, sales, after-sales -->
+                    </li>
+                    <li>
+                        <strong>Information Systems</strong>
+                        <!-- Project, methodology, governance, comitology, integrations, architecture. -->
+                    </li>
+                    <li>
+                        <strong>Process Design</strong>
+                        <!-- Process design and optimisation. -->
+                    </li>
+                    <li>
+                        <strong>Complex Projects</strong>
+                        <!-- Implementing of ERPs and equivalent (WMS, TMS, E-Procurement) for global corporations. -->
+                    </li>
+                </ul>
+            </section>
+
+            <section class="projects">
+                <h3>Side Projects</h3>
+                <ul>
+                    <li class="project">
+                        <strong>3D Corner:</strong> Connecting creators with premium 3D printing services.
+                        <a href="https://www.3d-corner.com" target="_blank">View website</a>
+                    </li>
+                    <li class="project">
+                        <strong>Botello:</strong> Sustainable products made from recycled materials.
+                    </li>
+                    <li class="project">
+                        <strong>VROV:</strong> Control a robot over the web to accomplish quests.
+                        <a href="http://vrov.solution-factory.fr" target="_blank">View website</a>
+                    </li>
+                </ul>
+            </section>
+ 
+
+
+
+
+
         </section>
+
     </div>
-
-    <script>
-        Vue.createApp({}).component('vue-feather', VueFeather).mount('#app');
-    </script>
 </body>
+
 </html>
-
-
-
-
