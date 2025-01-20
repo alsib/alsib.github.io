@@ -1,4 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Sibony - Solutions Architect</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-feather@2"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .projects {
+            margin-top: 20px;
+        }
+        .project {
+            margin-bottom: 10px;
+        }
+        .icon {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+  
 <h1>Hello there</h1>
   <a href="/project_1.html">View project 1</a>
+  
+    <div id="app">
+        <header>
+            <h1>Alexandre Sibony</h1>
+            <h2>Solutions Architect & Consultant</h2>
+        </header>
+
+        <div class="contact">
+            <p>Email: <a href="mailto:alexandre.sibony@example.com">alexandre.sibony@example.com</a></p>
+            <p>Phone: +33 6 12 34 56 78</p>
+            <p>
+                <a href="https://linkedin.com/in/alexandresibony" target="_blank">
+                    <vue-feather type="linkedin" class="icon" /> LinkedIn
+                </a>
+            </p>
+        </div>
+
+        <section class="projects">
+            <h3>Current Projects</h3>
+            <div class="project">
+                <strong>3D Corner:</strong> Connecting creators with premium 3D printing services.
+            </div>
+            <div class="project">
+                <strong>Botello:</strong> Sustainable products made from recycled materials.
+            </div>
+            <div class="project">
+                <strong>Workload Estimation:</strong> Tools for efficient workload planning.
+            </div>
+            <div class="project">
+                <strong>ERP Upgrade:</strong> Comprehensive version upgrade management.
+            </div>
+        </section>
+    </div>
+
+    <script>
+        Vue.createApp({}).component('vue-feather', VueFeather).mount('#app');
+    </script>
+</body>
 </html>
+
+
+
+
